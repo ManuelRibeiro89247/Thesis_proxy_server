@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 requests.packages.urllib3.disable_warnings(requests.packages.urllib3.exceptions.InsecureRequestWarning)
 
+
 @app.route('/receive', methods=['POST'])
 def receive_data():
     try:
